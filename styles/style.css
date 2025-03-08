@@ -1,0 +1,177 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Navigation */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.hamburger-line {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  margin: 4px 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #007bff;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+main h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+section {
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Courses Section */
+.course-filters {
+  margin-bottom: 10px;
+}
+
+.course-filters button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.course-filters button:hover {
+  background: #0056b3;
+}
+
+#courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.course-card {
+  background: #e9ecef;
+  border-radius: 4px;
+  padding: 10px;
+  flex: 1 1 200px;
+  border: 1px solid #ccc;
+}
+
+.course-card.completed {
+  background: #d4edda;
+  border-color: #c3e6cb;
+}
+
+#total-credits {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: #fff;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    display: none;
+    width: 200px;
+    padding: 10px;
+  }
+  
+  .nav-links.active {
+    display: flex;
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+}
