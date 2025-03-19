@@ -1,0 +1,105 @@
+[
+    {
+        "name": "Company One",
+        "address": "123 Main St, Timbuktu, Mali",
+        "phone": "(223) 555-0101",
+        "website": "https://www.companyone.com",
+        "image": "company1.png",
+        "membershipLevel": 3,
+        "description": "Leading provider of business solutions."
+    },
+    {
+        "name": "Company Two",
+        "address": "456 Elm St, Timbuktu, Mali",
+        "phone": "(223) 555-0202",
+        "website": "https://www.companytwo.com",
+        "image": "company2.png",
+        "membershipLevel": 2,
+        "description": "Innovative tech company."
+    },
+    {
+        "name": "Company Three",
+        "address": "789 Oak St, Timbuktu, Mali",
+        "phone": "(223) 555-0303",
+        "website": "https://www.companythree.com",
+        "image": "company3.png",
+        "membershipLevel": 1,
+        "description": "Local retail business."
+    },
+    {
+        "name": "Company Four",
+        "address": "101 Pine St, Timbuktu, Mali",
+        "phone": "(223) 555-0404",
+        "website": "https://www.companyfour.com",
+        "image": "company4.png",
+        "membershipLevel": 3,
+        "description": "Global logistics provider."
+    },
+    {
+        "name": "Company Five",
+        "address": "202 Maple St, Timbuktu, Mali",
+        "phone": "(223) 555-0505",
+        "website": "https://www.companyfive.com",
+        "image": "company5.png",
+        "membershipLevel": 2,
+        "description": "Financial services company."
+    },
+    {
+        "name": "Company Six",
+        "address": "303 Birch St, Timbuktu, Mali",
+        "phone": "(223) 555-0606",
+        "website": "https://www.companysix.com",
+        "image": "company6.png",
+        "membershipLevel": 1,
+        "description": "Local food and beverage company."
+    },
+    {
+        "name": "Company Seven",
+        "address": "404 Cedar St, Timbuktu, Mali",
+        "phone": "(223) 555-0707",
+        "website": "https://www.companyseven.com",
+        "image": "company7.png",
+        "membershipLevel": 3,
+        "description": "International consulting firm."
+    }
+]
+document.addEventListener('DOMContentLoaded', () => {
+    const membersContainer = document.getElementById('membersContainer');
+    const toggleViewButton = document.getElementById('toggleView');
+    let isGridView = true;
+
+    async function fetchMembers() {
+        try {
+            const response = await fetch('data/members.json');
+            const members = await response.json();
+            displayMembers(members);
+        } catch (error) {
+            console.error('Error fetching members:', error);
+        }
+    }
+
+    function displayMembers(members) {
+        membersContainer.innerHTML = '';
+        members.forEach(member => {
+            const memberCard = document.createElement('div');
+            memberCard.classList.add('member-card');
+            memberCard.innerHTML = `
+                <img src="images/${member.image}" alt="${member.name}">
+                <h3>${member.name}</h3>
+                <p>${member.address}</p>
+                <p>${member.phone}</p>
+                <a href="${member.website}" target="_blank">Visit Website</a>
+                <p>${member.description}</p>
+            `;
+            membersContainer.appendChild(memberCard);
+        });
+    }
+
+    toggleViewButton.addEventListener('click', () => {
+        isGridView = !isGridView;
+        membersContainer.classList.toggle('grid-view', isGridView);
+        membersContainer.classList.toggle('list-view', !isGridView);
+    });
+
+    fetchMembers();
+});

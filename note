@@ -1,0 +1,11 @@
+Review the chamber of commerce project description.
+Review the chamber of commerce project site planing document.
+
+find the meaning of the following:
+    <meta property="og:title" content="Timbuktu Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://example.com/images/timbuktu-cityscape.jpg">
+    <meta property="og:url" content="https://www.timbuktu-chamber.org">
+    <meta name="description" content="Timbuktu Chamber of Commerce - Your source for local business and community information">
+    <meta name="author" content="Albright Edet">
+    <meta property="og:description" content="Timbuktu Chamber of Commerce - Your source for local business and community information">
