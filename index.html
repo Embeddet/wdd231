@@ -13,26 +13,26 @@
     <meta name="twitter:card" content="summary_large_image">
     <title>Timbuktu Chamber of Commerce</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Open+Sans:wght@400;700&display=swap">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/date.js" defer></script>
-    <script src="scripts/course.js" defer></script>
-    <script src="scripts/theme.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <link rel="stylesheet" href="chamber/styles/style.css">
+    <script src="chamber/scripts/navigation.js" defer></script>
+    <script src="chamber/scripts/date.js" defer></script>
+    <script src="chamber/scripts/course.js" defer></script>
+    <script src="chamber/scripts/theme.js" defer></script>
+    <script src="chamber/scripts/members.js" defer></script>
 </head>
 <body>
     <header>
         <div class="header-content">
-            <img src="images/logo.webp" alt="Chamber Logo" width="120" height="100">
+            <img src="chamber/images/logo.webp" alt="Chamber Logo" width="120" height="100">
             <h1>Timbuktu<br><span>Chamber of Commerce</span></h1>
         </div>
         <nav class="main-nav">
             <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
             <ul class="nav-list">
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="Directory.html">Directory</a></li>
+                <li><a href="chamber/Directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
             </ul>
             <button id="theme-toggle" aria-label="Toggle theme">🌗</button>
         </nav>
@@ -45,7 +45,14 @@
         </section>
 
         <aside class="weather-section">
-            <!-- Weather section remains unchanged -->
+            <h2>Current Weather</h2>
+            <div class="weather-info">
+                <p>Location: Timbuktu, Mali</p>
+                <p>Temperature: 30°C</p>
+                <p>Condition: Sunny</p>
+                <p>Humidity: 20%</p>
+                <p>Wind: 10 km/h</p>
+            </div>
         </aside>
 
         <section class="certificate-info">
