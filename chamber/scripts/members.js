@@ -6,10 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
     async function fetchMembers() {
         try {
             const response = await fetch('data/members.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
             const members = await response.json();
             displayMembers(members);
         } catch (error) {
             console.error('Error fetching members:', error);
+            membersContainer.innerHTML = '<p>Failed to load member data. Please try again later.</p>';
         }
     }
 
