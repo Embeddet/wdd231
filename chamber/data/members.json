@@ -5,7 +5,7 @@
         "phone": "(223) 555-0101",
         "website": "https://www.companyone.com",
         "image": "company1.png",
-        "membershipLevel": 3,
+        "membershipLevel": "Gold",
         "description": "Leading provider of business solutions."
     },
     {
@@ -14,7 +14,7 @@
         "phone": "(223) 555-0202",
         "website": "https://www.companytwo.com",
         "image": "company2.png",
-        "membershipLevel": 2,
+        "membershipLevel": "Silver",
         "description": "Innovative tech company."
     },
     {
@@ -23,7 +23,7 @@
         "phone": "(223) 555-0303",
         "website": "https://www.companythree.com",
         "image": "company3.png",
-        "membershipLevel": 1,
+        "membershipLevel": "Bronze",
         "description": "Local retail business."
     },
     {

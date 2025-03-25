@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Timbuktu Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://example.com/images/timbuktu-cityscape.jpg">
+    <meta property="og:image" content="chamber/images/timbuktu-cityscape.jpg">
     <meta property="og:url" content="https://www.timbuktu-chamber.org">
     <meta name="description" content="Timbuktu Chamber of Commerce - Your source for local business and community information">
     <meta name="author" content="Albright Edet">
@@ -38,12 +38,25 @@
         </nav>
     </header>
 
+    <div class="hero-section">
+        <img src="chamber/images/rs.jpg" alt="Timbuktu Cityscape" class="hero-image">
+        <div class="hero-content">
+            <a href="#" class="hero-button">Join the Chamber</a>
+        </div>
+    </div>
+
     <main>
-        <section class="business-listings">
-            <button id="toggleView">Toggle View</button>
-            <div id="membersContainer" class="grid-view"></div>
+        <!-- Current Events Section -->
+        <section class="current-events">
+            <h2>Current Events</h2>
+            <ul>
+                <li><strong>Business Networking Night</strong> - March 30, 2025</li>
+                <li><strong>Annual Chamber Gala</strong> - April 15, 2025</li>
+                <li><strong>Small Business Workshop</strong> - May 10, 2025</li>
+            </ul>
         </section>
 
+        <!-- Weather Section -->
         <aside class="weather-section">
             <h2>Current Weather</h2>
             <div class="weather-info">
@@ -55,27 +68,25 @@
             </div>
         </aside>
 
-        <section class="certificate-info">
-            <h2>Web and Computer Programming Certificate</h2>
-            <div class="progress-bar">
-                <div class="progress-fill" style="width: calc(4/6*100%)">
-                    <span>4/6 Courses Completed</span>
-                </div>
+        <!-- Company Spotlights Section -->
+        <section class="company-spotlights">
+            <h2>Company Spotlights</h2>
+            <div class="spotlight">
+                <img src="chamber/images/company1.png" alt="Company One">
+                <h3>Company One</h3>
+                <p>Leading provider of business solutions in Timbuktu.</p>
+            </div>
+            <div class="spotlight">
+                <img src="chamber/images/company2.png" alt="Company Two">
+                <h3>Company Two</h3>
+                <p>Innovative tech company driving change in the region.</p>
+            </div>
+            <div class="spotlight">
+                <img src="chamber/images/company3.png" alt="Company Three">
+                <h3>Company Three</h3>
+                <p>Local retail business supporting the community.</p>
             </div>
         </section>
-
-        <section class="filter-controls">
-            <button class="filter-btn active" data-filter="all">All Courses</button>
-            <button class="filter-btn" data-filter="WDD">WDD Courses</button>
-            <button class="filter-btn" data-filter="CSE">CSE Courses</button>
-        </section>
-
-        <section class="courses-grid" id="coursesContainer"></section>
-
-        <div class="loading-overlay">
-            <div class="spinner"></div>
-        </div>
-        
     </main>
 
     <footer>
