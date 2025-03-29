@@ -3,41 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Timbuktu Chamber of Commerce">
+    <meta property="og:title" content="Join the Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="chamber/images/timbuktu-cityscape.jpg">
-    <meta property="og:url" content="https://www.timbuktu-chamber.org">
+    <meta property="og:image" content="images/logo.webp">
+    <meta property="og:url" content="https://www.timbuktu-chamber.org/join.html">
     <meta name="description" content="Timbuktu Chamber of Commerce - Your source for local business and community information">
     <meta name="author" content="Albright Edet">
     <meta property="og:description" content="Timbuktu Chamber of Commerce - Your source for local business and community information">
     <meta name="twitter:card" content="summary_large_image">
     <title>Join the Chamber of Commerce</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Open+Sans:wght@400;700&display=swap">
-    <link rel="stylesheet" href="chamber/styles/style.css">
-    <script src="chamber/scripts/navigation.js" defer></script>
-    <script src="chamber/scripts/date.js" defer></script>
-    <script src="chamber/scripts/course.js" defer></script>
-    <script src="chamber/scripts/theme.js" defer></script>
-    <script src="chamber/scripts/members.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/theme.js" defer></script>
+    <script src="scripts/members.js" defer></script>
     <script src="scripts/join.js" defer></script>
 </head>
 <body>
     <header>
         <div class="header-content">
             <img src="images/logo.webp" alt="Chamber Logo" width="120" height="100">
-            <h1>Timbuktu<br><span>Chamber of Commerce</span></h1>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html" class="active">Join</a></li>
+                    <li><a href="#">Discover</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="main-nav">
-            <ul class="nav-list">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html" class="active">Join</a></li>
-                <li><a href="#">Discover</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
+        <!-- Corrected H1 -->
+        <h1>Join the Chamber of Commerce</h1>
+
         <section class="join-form">
             <h2>Join the Chamber</h2>
             <form action="thankyou.html" method="get">
