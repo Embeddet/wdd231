@@ -28,17 +28,18 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   transition: background-color 0.3s, color 0.3s;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Rest of your existing styles below */
 /* Header Styles */
 header {
-  background-color: #f5f5f5;
-  padding: 1rem;
-  border-bottom: 2px solid #ddd;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
 }
 
 .header-content {
@@ -58,6 +59,9 @@ header {
 .nav-list {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start; /* Align navigation items to the left */
 }
 
 .nav-list li {
@@ -65,7 +69,7 @@ header {
 }
 
 .nav-list li a {
-  color: #444;
+  color: #ffffff; /* Set text color to white */
   text-decoration: none;
   font-weight: bold;
 }
@@ -214,10 +218,10 @@ header {
 
 /* Footer Styles */
 footer {
-  background-color: #333;
-  color: white;
-  padding: 2rem 1rem;
-  margin-top: 3rem;
+  background-color: #2c3e50;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
 }
 
 .footer-content {
@@ -563,4 +567,99 @@ h1 {
 
 .member-card a:hover {
     text-decoration: underline;
+}
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+.visitor-message {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Discover Grid */
+.discover-grid {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Card Styles */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card figure {
+    margin: 0;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    margin: 10px;
+    color: #2c3e50;
+}
+
+.card address {
+    font-style: normal;
+    font-size: 0.9rem;
+    margin: 10px;
+    color: #555;
+}
+
+.card p {
+    font-size: 0.9rem;
+    margin: 10px;
+    color: #333;
+}
+
+.card button {
+    display: block;
+    margin: 10px auto 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.card button:hover {
+    background-color: #2c3e50;
 }
