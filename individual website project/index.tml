@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Systems - Home</title>
+    <meta name="description" content="Explore the world of embedded systems, including microcontrollers, IoT devices, and more.">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Embedded Systems</h1>
+            <p>Discover the fascinating world of embedded systems and their applications.</p>
+        </section>
+        <section class="items-container">
+            <!-- Items will be dynamically loaded here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Embedded Systems</p>
+    </footer>
+</body>
+</html>
