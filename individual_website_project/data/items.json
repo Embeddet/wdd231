@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Embedded Systems",
+        "description": "Learn about microcontrollers, sensors, and actuators.",
+        "image": "images/embedded1.webp",
+        "category": "Technology"
+    },
+    {
+        "title": "UAV Design",
+        "description": "Explore the design and development of UAVs.",
+        "image": "images/uav2.webp",
+        "category": "Aerospace"
+    },
+    {
+        "title": "Machine Vision",
+        "description": "Discover how machine vision is used in robotics.",
+        "image": "images/machine_vision.webp",
+        "category": "AI"
+    },
+    {
+        "title": "PCB Design",
+        "description": "Learn about PCB design and manufacturing.",
+        "image": "images/pcb.webp",
+        "category": "Electronics"
+    }
+    // Add more items to reach 15
+]
